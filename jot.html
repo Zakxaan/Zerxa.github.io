@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team - Wizcraft IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: gray !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+        /* Align the dropdown toggle with the other items in the navbar */
+        .navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+
+/* Make dropdown appear on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Add smooth transition for dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: white !important; /* Text color */
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: black !important; /* Hover effect */
+    color: white !important;
+}
+        /* Join Our Team Section */
+        .join-team-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .join-team-section h2 {
+            color: black;
+            font-weight: bold;
+        }
+
+        .join-team-section .container {
+            max-width: 900px;
+        }
+
+        .join-team-item {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .join-team-item h4 {
+            color: #007bff;
+        }
+
+        .join-team-item p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .btn-custom {
+            background-color: white;
+            color: black;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+
+        .btn-custom:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom" href="contact.html">Join Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Join Our Team Section -->
+    <section id="join-team" class="join-team-section">
+        <div class="container text-center">
+            <h2 class="mb-4">Join Our Team</h2>
+            <p class="lead mb-5">We are always looking for talented individuals who are passionate about technology and innovation. If you are ready to take the next step in your career and make a real impact, we want to hear from you!</p>
+            <div class="row">
+                <!-- Job 1 -->
+                <div class="col-md-6">
+                    <div class="join-team-item">
+                        <h4>Software Developer</h4>
+                        <p>As a Software Developer, you will be responsible for building innovative solutions that help our clients stay ahead of the competition. You should have experience with various programming languages and frameworks.</p>
+                        <a href="contact.html" class="btn btn-custom">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Job 2 -->
+                <div class="col-md-6">
+                    <div class="join-team-item">
+                        <h4>UI/UX Designer</h4>
+                        <p>We are looking for a talented UI/UX Designer who can create user-friendly, visually appealing designs. If you have a keen eye for detail and experience with design tools, this position is for you.</p>
+                        <a href="contact.html" class="btn btn-custom">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Job 3 -->
+                <div class="col-md-6">
+                    <div class="join-team-item">
+                        <h4>Project Manager</h4>
+                        <p>As a Project Manager, you will lead and manage teams to deliver software solutions on time and within budget. You should have excellent communication skills and experience managing projects in an agile environment.</p>
+                        <a href="contact.html" class="btn btn-custom">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Job 4 -->
+                <div class="col-md-6">
+                    <div class="join-team-item">
+                        <h4>Marketing Specialist</h4>
+                        <p>We are looking for a creative Marketing Specialist to help us grow our brand and customer base. If you have experience with digital marketing strategies and tools, we’d love to have you on our team.</p>
+                        <a href="contact.html" class="btn btn-custom">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Services Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="jot.html" class="text-light text-decoration-none">Join Our Team</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Office Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Office</h5>
+                    <p class="text-light mb-2">
+                        <strong>Wizcraft IT Solutions</strong><br>
+                        7 Tombs Road Tolichowki,<br>
+                        Hyderabad, Telangana, India<br>
+                    </p>
+                    <p class="text-light d-flex flex-column align-items-start">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-phone" style="font-size: 1.5em; color: black;"></i>
+                            <a href="tel:+919676535786" class="mx-2">+91 9676535786</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-whatsapp" style="font-size: 1.5em; color: black;"></i>
+                            <a href="https://wa.me/+919704063192" target="_blank" class="mx-2">+91 9704063192</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope" style="font-size: 1.5em; color: black;"></i>
+                            <a href="mailto:mr@wizcraftitsolutions.in" class="mx-2">mr@wizcraftitsolutions.in</a>
+                        </div>
+                    </p> 
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Wizcraft IT Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Database Management - Wizcraft IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: gray !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+        .navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+
+/* Make dropdown appear on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Add smooth transition for dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: white !important; /* Text color */
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: black !important; /* Hover effect */
+    color: white !important;
+}
+
+        .btn-custom {
+            background-color: white;
+            color: black;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+
+        .btn-custom:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body style="background-color: #f8f9fa;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SQL Database Management Section -->
+    <section class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4">SQL Database Management</h1>
+                <p class="lead">At Wizcraft IT Solutions, we provide comprehensive SQL database management services tailored to optimize your data storage, accessibility, and security. SQL (Structured Query Language) is the backbone of modern data-driven applications, ensuring reliable and efficient data handling.</p>
+                <h3>Our Expertise Includes:</h3>
+                <ul>
+                    <li>Database Design & Architecture</li>
+                    <li>SQL Query Optimization</li>
+                    <li>Custom Stored Procedures and Functions</li>
+                    <li>Data Migration & Integration</li>
+                    <li>Database Performance Tuning</li>
+                    <li>Backup & Disaster Recovery Planning</li>
+                    <li>High Availability & Scalability Solutions</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="images/psql.png" alt="SQL Database Management" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Why Choose Wizcraft IT Solutions for SQL Database Management?</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-award-fill text-primary" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Expert Developers</h5>
+                        <p class="card-text">Our team of skilled SQL developers ensures top-notch solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-bar-chart-fill text-success" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Optimized Performance</h5>
+                        <p class="card-text">We ensure that your SQL databases are optimized for speed, reliability, and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-wallet2 text-info" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Cost-Effective Solutions</h5>
+                        <p class="card-text">We deliver high-quality SQL database services at competitive rates, maximizing value for your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5 py-5 bg-dark rounded shadow" id="join-team">
+        <div class="row align-items-center">
+            <!-- Left Side: Icon -->
+            <div class="col-md-6 text-center">
+                <i class="bi bi-people-fill text-white" style="font-size: 5rem;"></i>
+            </div>        
+            <!-- Right Side: Text Content -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title fw-bold mb-4">Join Our Team</h2>
+                        <blockquote class="blockquote mb-4">
+                            <p class="fw-bold fs-5 text-yellow">"The strength of the team is each individual member. The strength of each member is the team." – Phil Jackson</p>
+                        </blockquote>
+                        <p class="text-muted mb-4">
+                            At Wizcraft IT Solutions, we believe in empowering our team to achieve greatness together. If you're passionate about technology, innovation, and teamwork, we'd love to hear from you. Come work with us and be a part of our journey to redefine IT solutions.
+                        </p>
+                        <h5 class="fw-bold">
+                            <i class="bi bi-telephone-fill me-2"></i> +91 9676535786
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section class="bg-dark text-white text-center py-5">
+        <h3>Contact Us for SQL Database Management Solutions</h3>
+        <p>Ready to optimize your database operations? Contact us today to discuss your requirements and learn how we can help.</p>
+        <a href="mailto:mr@wizcraftitsolutions.in" class="btn btn-custom">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Services Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="jot.html" class="text-light text-decoration-none">Join Our Team</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Office Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">Office</h5>
+                    <p class="text-light mb-2">
+                        <strong>Wizcraft IT Solutions</strong><br>
+                        7 Tombs Road Tolichowki,<br>
+                        Hyderabad, Telangana, India<br>
+                    </p>
+                    <p class="text-light d-flex flex-column align-items-start">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-phone" style="font-size: 1.5em; color: black;"></i>
+                            <a href="tel:+919676535786" class="mx-2">+91 9676535786</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-whatsapp" style="font-size: 1.5em; color: black;"></i>
+                            <a href="https://wa.me/+919704063192" target="_blank" class="mx-2">+91 9704063192</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope" style="font-size: 1.5em; color: black;"></i>
+                            <a href="mailto:mr@wizcraftitsolutions.in" class="mx-2">mr@wizcraftitsolutions.in</a>
+                        </div>
+                    </p> 
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Wizcraft IT Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

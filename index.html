@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizcraft IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: black !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;  /* Set nav item color to white */
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+
+        /* Align the dropdown toggle with the other items in the navbar */
+.navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+
+/* Make dropdown appear on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Add smooth transition for dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: white !important; /* Text color */
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: black !important; /* Hover effect */
+    color: white !important;
+}
+
+
+        .carousel-item {
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Fade-in effect for text */
+        .carousel-caption {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel-item.active .carousel-caption {
+            opacity: 1;
+        }
+
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* White background with black text and black on hover */
+        .btn-custom {
+            background-color: white;
+            color: black; /* Black text */
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: 2px solid black; /* Black border */
+        }
+
+        .btn-custom:hover {
+            background-color: black;
+            color: white; /* White text on hover */
+            border: 2px solid white; /* White border on hover */
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #007bff;
+        }
+
+        /* Fade-in sections */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .custom-img {
+        width: 50%; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+    }
+    #why-wizcraft {
+    background-color: black !important;
+}
+.bg-dark-purple {
+    background-color: #2f1b9b; /* Replace with your desired dark purple shade */
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <!-- Logo added here -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpg" style="height: 40px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-custom" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+    <div class="carousel-inner h-100">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('images/bg1.avif'); height: 100%; background-size: cover; background-position: center;">
+            <div class="carousel-caption d-flex align-items-center justify-content-center h-100 text-center text-light">
+                <div class="carousel-caption-inner">
+                    <h1 class="fw-bold display-4">Welcome to Wizcraft IT Solutions</h1>
+                    <a href="#services" class="btn btn-custom">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('images/bg3.avif'); height: 100%; background-size: cover; background-position: center;">
+            <div class="carousel-caption d-flex align-items-center justify-content-center h-100 text-center text-light">
+                <div class="carousel-caption-inner">
+                    <h1 class="fw-bold display-4">Empowering Your Digital Journey</h1>
+                    <a href="#services" class="btn btn-custom">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('images/bg2.avif'); height: 100%; background-size: cover; background-position: center;">
+            <div class="carousel-caption d-flex align-items-center justify-content-center h-100 text-center text-light">
+                <div class="carousel-caption-inner">
+                    <h1 class="fw-bold display-4">Innovative IT Solutions</h1>
+                    <a href="contact.html" class="btn btn-custom">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<style>
+    /* Ensure the carousel takes up the full viewport height */
+    .carousel-item {
+        height: 100vh;
+    }
+
+    /* Styling the carousel caption to center the text vertically and horizontally */
+    .carousel-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        right: 15px;
+        z-index: 1;
+    }
+
+    /* Make sure the button stands out */
+    .btn-custom {
+        background-color: white;
+        color: black;
+    }
+
+    /* Adjust text for small devices */
+    @media (max-width: 576px) {
+        .carousel-caption-inner h1 {
+            font-size: 1.8rem;
+        }
+
+        .carousel-caption-inner p {
+            font-size: 1rem;
+        }
+
+        .btn-custom {
+            padding: 10px 20px;
+        }
+    }
+
+    /* For medium devices */
+    @media (max-width: 768px) {
+        .carousel-caption-inner h1 {
+            font-size: 2rem;
+        }
+    }
+
+    /* For larger devices */
+    @media (min-width: 992px) {
+        .carousel-caption-inner h1 {
+            font-size: 3rem;
+        }
+    }
+
+    /* Custom size for the image */
+.custom-img {
+    max-width: 80%;  /* You can adjust the percentage to make it smaller or larger */
+    margin: 0 auto;  /* Centers the image */
+    display: block;  /* Ensures the image behaves like a block element */
+}
+
+</style>
+<!-- Why Wizcraft IT Solutions Section -->
+<!-- Why Wizcraft IT Solutions Section -->
+<div class="bg-dark text-white py-5" id="why-wizcraft">
+    <div class="container fade-in">
+        <div class="row align-items-center">
+            <!-- Image on the left -->
+            <div class="col-md-6">
+                <img src="images/logo2.jpg" class="img-fluid rounded custom-img" alt="Why Wizcraft IT Solutions">
+            </div>
+            <!-- Content on the right -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Why Choose Wizcraft IT Solutions?</h2>
+                <p>
+                    At Wizcraft IT Solutions, we bring expertise, innovation, and dedication to every project we undertake. 
+                    Our team of professionals is committed to delivering customized IT solutions that align with your business goals and help you stay ahead in the competitive digital landscape.
+                </p>
+                <ul>
+                    <li>Tailored IT solutions to meet your unique needs.</li>
+                    <li>Experienced professionals with a proven track record.</li>
+                    <li>Cutting-edge technology and tools.</li>
+                    <li>Exceptional customer service and support.</li>
+                </ul>
+                <a href="about.html" class="btn btn-custom mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Our Services Section -->
+<div class="bg-dark-purple text-white py-5" id="services">
+    <div class="container fade-in">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Services</h2>
+            <p class="text-black">Explore our wide range of IT solutions tailored to meet your business needs.</p>
+        </div>
+        <div class="row">
+            <!-- Data Security Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/ds.png" class="card-img-top" alt="Data Security">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Data Security</h5>
+                        <p class="card-text">
+                            Protect your sensitive business data with our cutting-edge security solutions. We ensure your data remains safe and secure from potential threats.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="ds.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Siebel CRM Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/s2.avif" class="card-img-top" alt="Siebel CRM">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Siebel CRM</h5>
+                        <p class="card-text">
+                            Optimize your customer relationship management with Siebel CRM. Empower your business with scalable, reliable, and feature-rich CRM solutions tailored to your needs.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="sugar.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Campaign Management System Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/s3.avif" class="card-img-top" alt="Campaign Management System">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Campaign Management System</h5>
+                        <p class="card-text">
+                            Manage and optimize your marketing campaigns effortlessly. Our Campaign Management System helps you achieve maximum ROI with minimal effort.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="cms.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Cloud Data Management Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/s4.avif" class="card-img-top" alt="Cloud Data Management">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cloud Data Management</h5>
+                        <p class="card-text">
+                            Enhance your data management strategies with our innovative Cloud Data Management solutions. Safely store, manage, and analyze your data with high scalability and security.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="cvm.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SQL Database Management Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/s5.avif" class="card-img-top" alt="SQL Database Management">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">SQL Database Management</h5>
+                        <p class="card-text">
+                            Unlock the potential of structured data with our SQL Database Management services. We ensure optimized performance and secure data handling for your enterprise.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="postgresql.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Digital Testing Services Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm bg-black text-white">
+                    <img src="images/mdb.png" class="card-img-top" alt="Digital Testing Services">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Digital Testing Services</h5>
+                        <p class="card-text">
+                            Ensure flawless digital experiences with our comprehensive Digital Testing Services. From functionality to performance, we've got you covered.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-black border-0">
+                        <a href="mongo.html" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+          
+<!-- Join Our Team Section -->
+<div class="container my-5 py-5 bg-dark rounded shadow" id="join-team">
+    <div class="row align-items-center">
+        <!-- Left Side: Icon -->
+        <div class="col-md-6 text-center">
+            <i class="bi bi-people-fill text-white" style="font-size: 5rem;"></i>
+        </div>        
+        <!-- Right Side: Text Content -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow bg-light">
+                <div class="card-body">
+                    <h2 class="card-title fw-bold mb-4">Join Our Team</h2>
+                    <blockquote class="blockquote mb-4">
+                        <p class="fw-bold fs-5 text-yellow">"The strength of the team is each individual member. The strength of each member is the team." – Phil Jackson</p>
+                    </blockquote>
+                    <p class="text-muted mb-4">
+                        At Wizcraft IT Solutions, we believe in empowering our team to achieve greatness together. If you're passionate about technology, innovation, and teamwork, we'd love to hear from you. Come work with us and be a part of our journey to redefine IT solutions.
+                    </p>
+                    <h5 class="fw-bold">
+                        <i class="bi bi-telephone-fill me-2"></i> +91 9676535786
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Services Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Services</h5>
+                <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    <li><a href="jot.html" class="text-light text-decoration-none">Join Our Team</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Office Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Office</h5>
+                <p class="text-light mb-2">
+                    <strong>Wizcraft IT Solutions</strong><br>
+                    7 Tombs Road Tolichowki,<br>
+                    Hyderabad, Telangana, India<br>
+                </p>
+                <p class="text-light d-flex flex-column align-items-start">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-phone" style="font-size: 1.5em; color: black;"></i>
+                        <a href="tel:+919676535786" class="mx-2">+91 9676535786</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-whatsapp" style="font-size: 1.5em; color: black;"></i>
+                        <a href="https://wa.me/+919704063192" target="_blank" class="mx-2">+91 9704063192</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-envelope" style="font-size: 1.5em; color: black;"></i>
+                        <a href="mailto:mr@wizcraftitsolutions.in" class="mx-2">mr@wizcraftitsolutions.in</a>
+                    </div>
+                </p> 
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Wizcraft IT Solutions. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Navbar color change on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Fade-in effect on scroll for fade-in elements
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
+</body>
+</html>

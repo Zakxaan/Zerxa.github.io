@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Wizcraft IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: black !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+
+        .btn-custom {
+            background-color: white;
+            color: black;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+
+        .btn-custom:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .about-section {
+            background-image: url('about-us-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+        }
+
+        .about-text {
+            text-align: center;
+            margin-top: 30px;
+            color: black; /* Changed text color to black */
+        }
+
+        .card-deck .card {
+            margin-bottom: 30px;
+        }
+
+        /* Circle image style */
+        .about-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 10px;
+        }
+        /* Soft rounded corners */
+.rounded-soft {
+    border-radius: 15px;  /* Adjust the value to make the corners more or less rounded */
+}
+
+
+        /* Animation for numbers */
+        .counter {
+            font-size: 3rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .counter-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+                /* Align the dropdown toggle with the other items in the navbar */
+.navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+
+/* Make dropdown appear on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Add smooth transition for dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: white !important; /* Text color */
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: black !important; /* Hover effect */
+    color: white !important;
+}
+
+    </style>
+</head>
+<body style="background-color: #f8f9fa;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" style="height: 40px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <!-- Image on the left side -->
+                <div class="col-md-6 text-center order-md-1">
+                    <img src="images/logo2.jpg" alt="About Us" class="img-fluid rounded-soft" style="max-width: 300px;">
+                </div>
+                <!-- Text on the right side -->
+                <div class="col-md-6 text-center order-md-2">
+                    <p class="lead text-dark">
+                        At Wizcraft IT Solutions, we believe in the power of technology to drive business success. Our team is equipped with the skills, knowledge, and experience to deliver exceptional results in various domains, from data security to CRM systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="counter-container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="counter" data-target="20">0</div>
+            <p class="lead">Global Presence</p>
+        </div>
+        <div class="col-md-6">
+            <div class="counter" data-target="90">0</div>
+            <p class="lead">Client Satisfaction</p>
+        </div>
+    </div>
+</section>
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow">
+                <div class="card-body text-center p-0">
+                    <!-- Image for Mission -->
+                    <img src="images/om.avif" alt="Mission" class="img-fluid mb-3 rounded-top" style="height: 200px; object-fit: cover; width: 100%;">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to empower businesses by providing innovative and reliable IT solutions that drive growth and success. We aim to be a trusted partner for businesses of all sizes and industries, helping them navigate the digital landscape with cutting-edge technology and expert guidance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow">
+                <div class="card-body text-center p-0">
+                    <!-- Image for Vision -->
+                    <img src="images/v.jpg" alt="Vision" class="img-fluid mb-3 rounded-top" style="height: 200px; object-fit: cover; width: 100%;">
+                    <h3>Our Vision</h3>
+                    <p>Our vision is to be a global leader in IT solutions, helping businesses embrace the future with confidence. We strive to stay at the forefront of technology, providing our clients with the most efficient, secure, and scalable solutions available in the industry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Our Values Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Values</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-shield-lock-fill text-primary" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Integrity</h5>
+                        <p class="card-text">We operate with the highest level of integrity, ensuring that our solutions are not only effective but also ethically sound.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-lightbulb-fill text-success" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Innovation</h5>
+                        <p class="card-text">We believe in the power of innovation and constantly push the boundaries to deliver creative solutions that meet the needs of our clients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-person-circle text-info" style="font-size: 2rem;"></i>
+                        </div>
+                        <h5 class="card-title">Customer-Centric</h5>
+                        <p class="card-text">Our clients are at the heart of everything we do. We work closely with them to understand their needs and deliver personalized solutions that drive success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Text with Image -->
+    <section class="container my-5 text-center about-text">
+        <div>
+            <img src="images/t.webp" alt="Team Member" class="about-img">
+        </div>
+        <p class="lead">At Wizcraft IT Solutions, we understand the importance of technology in modern business. Our talented team is dedicated to providing the highest quality IT services, helping you stay ahead of the competition. We specialize in offering customized solutions that address your unique challenges and goals.</p>
+    </section>
+    <!-- Contact Section -->
+    <section class="bg-dark text-white text-center py-5">
+        <h3>Contact Us for More Information</h3>
+        <p>If you'd like to learn more about Wizcraft IT Solutions or have any questions, feel free to get in touch with us. We're here to help!</p>
+        <a href="mailto:mr@wizcraftitsolutions.in" class="btn btn-custom">Get in Touch</a>
+    </section>
+    <footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Services Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Services</h5>
+                <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="postgresql.html">SQL Database Management</a></li>
+                            <li><a class="dropdown-item" href="mongo.html">Digital Testing Services</a></li>
+                            <li><a class="dropdown-item" href="sugar.html">Siebel CRM</a></li>
+                            <li><a class="dropdown-item" href="cms.html">Campaign Management System</a></li>
+                            <li><a class="dropdown-item" href="loyalty.html">Loyalty Management</a></li>
+                            <li><a class="dropdown-item" href="cvm.html">Cloud Data Management</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    <li><a href="jot.html" class="text-light text-decoration-none">Join Our Team</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Office Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-primary mb-3">Office</h5>
+                <p class="text-light mb-2">
+                    <strong>Wizcraft IT Solutions</strong><br>
+                    7 Tombs Road Tolichowki,<br>
+                    Hyderabad, Telangana, India<br>
+                </p>
+                <p class="text-light d-flex flex-column align-items-start">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-phone" style="font-size: 1.5em; color: black;"></i>
+                            <a href="tel:+919676535786" class="mx-2">+91 9676535786</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-whatsapp" style="font-size: 1.5em; color: black;"></i>
+                            <a href="https://wa.me/+919704063192" target="_blank" class="mx-2">+91 9704063192</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope" style="font-size: 1.5em; color: black;"></i>
+                            <a href="mailto:mr@wizcraftitsolutions.in" class="mx-2">mr@wizcraftitsolutions.in</a>
+                        </div>
+                    </p> 
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Wizcraft IT Solutions. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Number animation with + and % symbols
+        document.addEventListener("DOMContentLoaded", function() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const symbol = counter.parentElement.querySelector('p').innerText.includes('Presence') ? '+' : '%'; // Determine the symbol
+                let currentCount = 0; // Start from 0
+                const increment = target / 200; // Reduced increment for slower animation
+        
+                const updateCounter = () => {
+                    if(currentCount < target) {
+                        currentCount = Math.ceil(currentCount + increment);
+                        counter.innerText = currentCount;
+                        setTimeout(updateCounter, 40); // Increased delay to slow down counting
+                    } else {
+                        counter.innerText = currentCount + symbol; // Append the symbol
+                    }
+                };
+                updateCounter();
+            });
+        });
+    </script>
+    
+
+<script>
+    // Navbar color change on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Fade-in effect on scroll for fade-in elements
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
+</body>
+</html>
